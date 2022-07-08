@@ -174,5 +174,91 @@ align-items: center;
     margin-top: 50px;
     margin-left: 10px;
     margin-right: 10px;
-    background-color: white;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills h2 {
+
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.progress-bar{
+
+    background: grey;
+    width: 250px;
+    height: 10px;
+    border-radius: 5px;
+
+}
+
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 50%;
+   
+}
+
+.progress-bar div span {
+
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: white;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html {
+
+    background: yellowgreen;
+}
+
+.css {
+
+    background: orange;
+}
+
+.react {
+
+    background: blue;
+}
+
+.shopify {
+
+    background: green;
+}
+
+.html span {
+
+    border: 1px solid yellowgreen;
+}
+
+.css span {
+
+    border: 1px solid orange;
+}
+
+.react span {
+
+    border: 1px solid blue;
+}
+
+.shopify span {
+
+    border: 1px solid green;
 }
