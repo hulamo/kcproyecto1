@@ -5,55 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Hugo Moreno</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
     <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/normalized.css">
 </head>
 <body>
   
-    <main class="placeholder-content main">
-    <header class="sticky-content">
 
-<ul>
-    <a class="sticky-content-title">Hugo Moreno</a>
-    <li style="float:right"><a href="index.html" class="sticky-content-opciones">Principal</a></li>
-    <li style="float:right"><a href="contacto.html" class="sticky-content-opciones">Contacto</a></li>
-
-</ul>
-
-        
-
-
-
-    </header>
-  
+        <div class="grid-container">
+            <div class="grid-item item1">
+                <div class="topnav">
+                    <a class="active" href="index2.html">Hugo Moreno</a>
+                    <a href="index2.html">Acerca de:</a>
+                    <a href="contacto.html">Contacto</a>
+                    <input type="text" placeholder="Buscar..">
+                </div> 
+          
+            </div>
+            <div class="grid-item item2">    
  
-<section class="proyectos-titulo"><p class="texto-proyectos"><a href="index.html"><<</a>Contacto</p>
+<section class="proyectos-titulo"><p class="texto-proyectos"><a href="index2.html"><<</a>Contacto</p>
 
 </section>   
-
-
+            </div>
+            <div class="grid-item item3"> 
 <section class="formulario">
     <h2>Datos de contacto</h2>
-    <form action="#action"></form>
+    <form >
     <div>
     <label class="formulario-texto" for="nombre">Nombre</label>
     </div>
-    <input class="entrada-texto" type="text" id="nombre" name="nombre", placeholder="Nombre...">
-    <div><label for="apellido">Apellido</label></div>
+    <input class="entrada-texto" type="text" id="nombre" name="nombre", placeholder="Nombre..." required>
+    <div><label class="formulario-texto" for="apellido">Apellido</label></div>
     
-    <input class="entrada-texto" type="text" id="apellido" name="apellido", placeholder="Apellido...">
-    <div><label for="email">Email</label></div>
+    <input class="entrada-texto" type="text" id="apellido" name="apellido", placeholder="Apellido..." required>
+    <div><label class="formulario-texto" for="email">Email</label></div>
     
-    <input class="entrada-texto" type="email" id="email" name="email", placeholder="Email...">
-    
-    
+    <input class="entrada-texto" type="email" id="email" name="email", placeholder="Email..." required>
 
-    <input type="submit" value="Submit">
+
+    <div><label class="formulario-texto" for="telefono">Teléfono</label></div>
+    
+    <input class="entrada-texto" type="phone" id="telefono" name="telefono", placeholder="(###)-###-####" pattern="\d{10}" required>
+
+
+    <section class="radios">
+    <p class="formulario-texto"><b>¿Cómo me conociste?</b></p>
+</section>
+<section class="radios">    
+<input class="entrada-texto labelr" type="radio" id="Universidad" name="fav_language" value="Universidad">
+        <label class="formulario-texto labelr" for="Universidad">Universidad</label>
+    </section>
+    <section class="radios"> 
+    <input class="entrada-texto labelr" type="radio" id="keepc" name="fav_language" value="KeepC">
+    <label class="formulario-texto labelr"  for="keepc">Keep Coding Bootcamp</label>
+    </section>
+    <section class="radios"> 
+    <input class="entrada-texto labelr" type="radio" id="colegio" name="fav_language" value="Colegio">
+    <label class="formulario-texto labelr"  for="colegio">Colegio</label>
+</section>
+<section class="radios"> 
+    <input class="entrada-texto labelr" type="radio" id="github" name="fav_language" value="GitHub">
+    <label class="formulario-texto labelr"  for="github">En GitHub</label>
+</section>
+<div><label class="formulario-texto" for="tgit">Tag de GitHub</label></div>
+
+<input class="entrada-texto" type="text"  id="tgit" name="tgit", placeholder="@Username...",required pattern="@[a-zA-Z0-9]+">
+        
+
+<p></p>
+  
+    <button>Submit</button>
 </form>
 </section>
+            </div>
 
-</main>
 
 </body>
 
